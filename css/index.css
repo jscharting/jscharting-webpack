@@ -1,0 +1,25 @@
+#chartsWrapper{
+	max-width:1200px;
+	margin:0 auto;
+	display:flex;
+	align-items:flex-end;
+	flex-wrap:wrap;
+}
+.chart{
+    width:50%;
+    height:400px;
+}
+.chart2{
+    width:100%;
+    height:300px;
+}
+.jscGrid{
+	height:400px;
+	width:300px;
+	margin:auto;
+}
+@media (max-width: 950px) {
+	.chart2, .chart{
+		width:100%;
+	}
+}
