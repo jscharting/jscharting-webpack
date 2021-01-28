@@ -7,7 +7,6 @@ module.exports = {
 		index: './src/index.ts'
 	},
 	target: 'web',
-	devtool: 'none',
 	mode: 'development',
 	module: {
 		rules: [
@@ -31,7 +30,7 @@ module.exports = {
 	},
 	plugins: [
 		new CopyPlugin([
-			{from: 'node_modules/jscharting/dist/', to: 'jsc/'}
+			{from: 'node_modules/jscharting/dist/', to: 'jsc/', ignore: ['jscharting.*']}
 		])
 	],
 	output: {
